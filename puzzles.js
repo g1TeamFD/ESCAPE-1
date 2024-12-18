@@ -1,4 +1,5 @@
-import { sceneImages } from '../assets/images';
+import { sceneImages } from './images.js';
+
 
 export const puzzles = [
   {
