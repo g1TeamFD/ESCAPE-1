@@ -1,18 +1,12 @@
-// Scene images configuration
 export const sceneImages = {
-  // Pre-game scenes
-  introScene: '/images/intro-scene.jpg',
-  
-  // Main game scenes
-  securityTerminal: '/images/security-terminal.jpg',
-  digitalNotebook: '/images/digital-notebook.jpg',
-  generatorRoom: '/images/generator-room.jpg',
-  timeChamber: '/images/time-chamber.jpg',
-  mainChamber: '/images/main-chamber.jpg',
-  
-  // End game scenes
-  finalPuzzle: '/images/final-puzzle.jpg',
-  victoryScene: '/images/victory-scene.jpg',
-  drFrostNote: '/images/dr-frost-note.jpg',
-  endScene: '/images/end-scene.jpg'
+  introScene: './assets/images/intro-scene.jpg',
+  securityTerminal: './assets/images/security-terminal.jpg',
+  digitalNotebook: './assets/images/digital-notebook.jpg',
+  generatorRoom: './assets/images/generator-room.jpg',
+  timeChamber: './assets/images/time-chamber.jpg',
+  mainChamber: './assets/images/main-chamber.jpg',
+  finalPuzzle: './assets/images/final-puzzle.jpg',
+  victoryScene: './assets/images/victory-scene.jpg',
+  drFrostNote: './assets/images/dr-frost-note.jpg',
+  endScene: './assets/images/end-scene.jpg'
 };
