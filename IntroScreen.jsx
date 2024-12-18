@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { gameIntro } from '../gameContent';
-import { sceneImages } from '../images';
+import { gameIntro } from './gameContent';
+import { sceneImages } from './images';
 import TypewriterText from './TypewriterText';
 
 function IntroScreen({ onStart }) {
