@@ -23,13 +23,15 @@ export default function IntroScreen({ onStart }) {
       />
 
       <div className="relative z-10 max-w-2xl mx-auto bg-blue-800/50 p-6 rounded-lg backdrop-blur-sm">
+        {/* Title and Subtitle */}
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center text-blue-200">
           <TypewriterText text={gameIntro.title} />
         </h1>
         <h2 className="text-xl md:text-2xl font-bold mb-6 text-center text-blue-300">
           <TypewriterText text={gameIntro.subtitle} delay={0.05} />
         </h2>
-        
+
+        {/* Urgent Message */}
         <div className="mb-6">
           <div className="text-red-400 font-bold mb-2">
             <TypewriterText text={gameIntro.urgentMessage.date} delay={0.03} />
@@ -42,6 +44,32 @@ export default function IntroScreen({ onStart }) {
           </p>
         </div>
 
+        {/* Credit System Introduction */}
+        <div className="bg-gray-700/70 p-4 rounded-lg mb-6 shadow-lg">
+          <h3 className="text-lg font-bold mb-2 text-yellow-300">Credit System Introduction</h3>
+          <ul className="list-disc ml-5 text-sm">
+            <li><strong>Starting Credit:</strong> 10 credits</li>
+            <li><strong>Cost to Reveal an Answer:</strong> 10 credits</li>
+            <li><strong>Credits for Correct Answers:</strong>
+              <ul className="list-disc ml-5">
+                <li>Correct without hints = +5 credits</li>
+                <li>2 consecutive correct answers without hints = Double current credits</li>
+                <li>3 consecutive correct answers without hints = Triple current credits</li>
+              </ul>
+            </li>
+            <li><strong>Hint Costs:</strong></li>
+            <ul className="list-disc ml-5">
+              <li>Hint 1: Costs 1 credit - Minor clue</li>
+              <li>Hint 2: Costs 2 credits - Moderate clue</li>
+              <li>Hint 3: Costs 3 credits - Significant clue</li>
+            </ul>
+          </ul>
+          <p className="mt-2 text-yellow-200">
+            Let’s see how much you can earn by the end of the Mission! :)
+          </p>
+        </div>
+
+        {/* Begin Mission Button */}
         <motion.button
           onClick={onStart}
           whileHover={{ scale: 1.05 }}
