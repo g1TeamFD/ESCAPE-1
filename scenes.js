@@ -1,7 +1,7 @@
 export const scenes = [
   {
     id: 1,
-    title: "Laboratory Entry",
+    title: "Laboratory Entry testing",
     description: "You arrive at the frozen entrance of Santa's Secret Laboratory. The door is secured with an advanced ice-crystal keypad, its surface gleaming with magical energy.",
     puzzle: "The keypad shows a pattern of snowflakes. Each snowflake has a different number of points (6, 8, 12, 7, 5). Arrange these numbers based on the temperature they form at (-5°C, -7°C, -6°C, -8°C, -12°C). What's the correct sequence?",
     answer: "58672",
