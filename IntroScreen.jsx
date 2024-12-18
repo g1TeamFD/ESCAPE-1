@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { gameIntro } from './gameContent';
 import { sceneImages } from './images';
-import TypewriterText from './TypewriterText';
 
 export default function IntroScreen({ onStart }) {
   return (
@@ -25,22 +24,22 @@ export default function IntroScreen({ onStart }) {
       <div className="relative z-10 max-w-2xl mx-auto bg-blue-800/50 p-6 rounded-lg backdrop-blur-sm">
         {/* Title and Subtitle */}
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center text-blue-200">
-          <TypewriterText text={gameIntro.title} />
+          {gameIntro.title}
         </h1>
         <h2 className="text-xl md:text-2xl font-bold mb-6 text-center text-blue-300">
-          <TypewriterText text={gameIntro.subtitle} delay={0.05} />
+          {gameIntro.subtitle}
         </h2>
 
         {/* Urgent Message */}
         <div className="mb-6">
           <div className="text-red-400 font-bold mb-2">
-            <TypewriterText text={gameIntro.urgentMessage.date} delay={0.03} />
+            {gameIntro.urgentMessage.date}
           </div>
           <div className="mb-2">
-            <TypewriterText text={gameIntro.urgentMessage.greeting} delay={0.03} />
+            {gameIntro.urgentMessage.greeting}
           </div>
           <p className="whitespace-pre-line">
-            <TypewriterText text={gameIntro.urgentMessage.content} delay={0.02} />
+            {gameIntro.urgentMessage.content}
           </p>
         </div>
 
