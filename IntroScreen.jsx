@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { gameIntro } from '../data/gameContent';
+import { gameIntro } from '../gameContent';
 import { sceneImages } from '../assets/images';
 import TypewriterText from './TypewriterText';
 
