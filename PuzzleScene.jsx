@@ -5,7 +5,7 @@ import TypewriterText from './TypewriterText';
 import CreditDisplay from './CreditDisplay';
 import HintButton from './HintButton';
 import RevealAnswerButton from './RevealAnswerButton';
-import { useCreditStore } from '../store/creditStore';
+import { useCreditStore } from './creditStore';
 
 function PuzzleScene({ puzzle, onSolve, onTimeout }) {
   const [answer, setAnswer] = useState('');
