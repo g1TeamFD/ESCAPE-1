@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { puzzles } from './data/puzzles';
-import IntroScreen from './components/IntroScreen';
-import PuzzleScene from './components/PuzzleScene';
-import VictoryScreen from './components/VictoryScreen';
-import { useCreditStore } from './store/creditStore';
+import { puzzles } from './puzzles.js';
+import IntroScreen from './IntroScreen.jsx';
+import PuzzleScene from './PuzzleScene.jsx';
+import VictoryScreen from './VictoryScreen.jsx';
+import { useCreditStore } from './creditStore.js';
 
 function App() {
   const [gameState, setGameState] = useState('intro'); // intro, playing, victory
