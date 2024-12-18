@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import VictoryMessage from './VictoryMessage';
-import { generateUniqueCode } from '../codeGenerator';
+import { generateUniqueCode } from './codeGenerator';
 
 function VictoryScreen({ timeElapsed, onRestart }) {
   const [uniqueCode] = useState(generateUniqueCode());
