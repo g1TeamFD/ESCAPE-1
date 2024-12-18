@@ -4,7 +4,7 @@ import { gameIntro } from './gameContent';
 import { sceneImages } from './images';
 import TypewriterText from './TypewriterText';
 
-function IntroScreen({ onStart }) {
+export default function IntroScreen({ onStart }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
